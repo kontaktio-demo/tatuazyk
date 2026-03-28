@@ -928,6 +928,10 @@ p {
   overflow: hidden;
 }
 
+.artist-img--placeholder {
+  background-color: #2a2a2a;
+}
+
 .artist-overlay {
   position: absolute;
   inset: 0;
@@ -1017,6 +1021,7 @@ p {
 
 .gallery-item {
   position: relative;
+  background-color: #2a2a2a;
   background-size: cover;
   background-position: center;
   border-radius: 4px;

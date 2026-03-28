@@ -132,7 +132,6 @@ function initFAQ() {
     btn.addEventListener('click', () => {
       const isOpen = btn.getAttribute('aria-expanded') === 'true';
 
-      
       faqItems.forEach(other => {
         if (other === item) return;
         const otherBtn    = other.querySelector('.faq-question');
@@ -145,7 +144,6 @@ function initFAQ() {
         }
       });
 
-      
       if (isOpen) {
         btn.setAttribute('aria-expanded', 'false');
         answer.style.maxHeight = '0';
@@ -153,7 +151,6 @@ function initFAQ() {
         setTimeout(() => { answer.hidden = true; }, 300);
       } else {
         answer.hidden = false;
-        
         answer.getBoundingClientRect();
         answer.style.maxHeight = answer.scrollHeight + 'px';
         answer.style.opacity   = '1';
@@ -161,7 +158,6 @@ function initFAQ() {
       }
     });
 
-    
     answer.style.maxHeight  = '0';
     answer.style.opacity    = '0';
     answer.style.overflow   = 'hidden';
