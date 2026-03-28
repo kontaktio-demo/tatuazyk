@@ -3,540 +3,876 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noir Palace — Luxury Hotel Paris</title>
-  <meta name="description" content="Noir Palace – luksusowy hotel boutique w Paryżu. Pokoje, apartamenty, SPA, fine dining. Rezerwacje online.">
-  <meta name="keywords" content="luxury hotel Paris, boutique hotel, SPA, fine dining, Noir Palace">
+  <title>Serpent Ink — Studio Tatuażu Warszawa</title>
+  <meta name="description" content="Serpent Ink – profesjonalne studio tatuażu w Warszawie. Custom, Black&Grey, Fine Line, Cover-up. Ponad 3000 projektów. Umów wizytę online.">
+  <meta name="keywords" content="studio tatuażu warszawa, tatuaż custom, black and grey, fine line, cover-up, serpent ink">
   <meta name="author" content="Kontaktio">
-  <meta property="og:title" content="Noir Palace — Luxury Hotel Paris">
-  <meta property="og:description" content="A private sanctuary of elegance, silence and comfort in the heart of Paris.">
+  <meta property="og:title" content="Serpent Ink — Studio Tatuażu Warszawa">
+  <meta property="og:description" content="Profesjonalne studio tatuażu w sercu Warszawy. Custom projekty, realistyczne tatuaże, doświadczeni artyści.">
   <meta property="og:type" content="website">
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚜️</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐍</text></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="preloading">
 
 <!-- PRELOADER -->
-<div id="preloader" role="status" aria-label="Loading Noir Palace">
+<div id="preloader" role="status" aria-label="Ładowanie Serpent Ink">
   <div class="preloader-inner">
-    <div class="preloader-logo">NOIR <strong>PALACE</strong></div>
+    <svg class="preloader-snake-svg" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M0,20 C10,8 20,32 30,20 C40,8 50,32 60,20 C70,8 80,32 90,20 C100,8 110,24 115,18"
+            stroke="#c41c1c" stroke-width="2.5" fill="none" stroke-linecap="round" class="preloader-snake-path"/>
+      <ellipse cx="116" cy="17" rx="5" ry="3.5" stroke="#c41c1c" stroke-width="1.5" fill="none" class="preloader-snake-path"/>
+      <circle cx="114" cy="15.5" r="1.5" fill="#c41c1c" class="preloader-snake-path"/>
+      <path d="M121,17 L127,13 M121,17 L127,21" stroke="#c41c1c" stroke-width="1.2" fill="none" class="preloader-snake-path"/>
+    </svg>
+    <div class="preloader-logo">SERPENT <strong>INK</strong></div>
     <div class="preloader-bar"><div class="preloader-fill"></div></div>
-    <span class="preloader-text">Entering Noir Palace…</span>
+    <span class="preloader-text">Wchodzimy do studia…</span>
   </div>
 </div>
 
 <!-- NAV -->
 <header class="nav" id="nav">
-  <a href="#hero" class="logo" aria-label="Noir Palace — Home">NOIR <strong>PALACE</strong></a>
+  <a href="#hero" class="logo" aria-label="Serpent Ink — Strona Główna">SERPENT <strong>INK</strong></a>
 
-  <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main navigation">
-    <a href="#about" class="nav-link">Hotel</a>
-    <a href="#rooms" class="nav-link">Rooms</a>
-    <a href="#dining" class="nav-link">Dining</a>
-    <a href="#spa" class="nav-link">SPA</a>
-    <a href="#gallery" class="nav-link">Gallery</a>
-    <a href="#contact" class="nav-link">Contact</a>
+  <nav class="nav-links" id="navLinks" role="navigation" aria-label="Nawigacja główna">
+    <a href="#o-nas" class="nav-link">O Nas</a>
+    <a href="#artysci" class="nav-link">Artyści</a>
+    <a href="#galeria" class="nav-link">Galeria</a>
+    <a href="#cennik" class="nav-link">Cennik</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="#kontakt" class="nav-link">Kontakt</a>
   </nav>
 
   <div class="nav-right">
-    <a href="#contact" class="btn btn-gold nav-cta">Reserve</a>
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+    <a href="#kontakt" class="btn btn-red nav-cta">Umów Wizytę</a>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 
 <!-- HERO -->
-<section id="hero" class="hero" aria-label="Welcome to Noir Palace">
+<section id="hero" class="hero" aria-label="Serpent Ink Studio Tatuażu">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
 
+  <!-- Snake pattern SVG -->
+  <svg class="hero-pattern-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <!-- Main serpent -->
+    <path d="M-50,520 C100,300 250,740 400,500 C550,260 700,700 850,460 C1000,220 1150,660 1300,420 C1400,260 1490,390 1550,330"
+          stroke="white" stroke-width="2.5" fill="none" opacity="0.1" stroke-linecap="round"/>
+    <!-- Snake head -->
+    <ellipse cx="1552" cy="322" rx="26" ry="15" fill="none" stroke="white" stroke-width="2" opacity="0.1"/>
+    <circle cx="1546" cy="318" r="4" fill="white" opacity="0.1"/>
+    <circle cx="1546" cy="318" r="1.8" fill="#080808" opacity="0.15"/>
+    <path d="M1578,322 L1600,310 M1578,322 L1600,334" stroke="white" stroke-width="1.5" fill="none" opacity="0.1"/>
+    <!-- Scale details -->
+    <path d="M100,508 C106,498 116,508 111,516" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M220,468 C226,458 236,468 231,476" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M350,497 C356,487 366,497 361,505" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M480,462 C486,452 496,462 491,470" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M610,488 C616,478 626,488 621,496" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M740,450 C746,440 756,450 751,458" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M870,466 C876,456 886,466 881,474" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M1000,435 C1006,425 1016,435 1011,443" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M1130,445 C1136,435 1146,445 1141,453" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M1260,410 C1266,400 1276,410 1271,418" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <path d="M1390,365 C1396,355 1406,365 1401,373" stroke="white" stroke-width="1" fill="none" opacity="0.06"/>
+    <!-- Second background serpent -->
+    <path d="M-100,200 C150,420 350,-30 600,220 C850,470 1050,80 1300,270 C1450,360 1560,160 1700,110"
+          stroke="white" stroke-width="1.5" fill="none" opacity="0.05"/>
+    <!-- Tribal triangles - top left -->
+    <polygon points="60,60 100,60 80,100" fill="none" stroke="white" stroke-width="1.5" opacity="0.1"/>
+    <polygon points="73,73 95,73 84,92" fill="none" stroke="white" stroke-width="0.8" opacity="0.06"/>
+    <!-- Tribal triangles - bottom right -->
+    <polygon points="1340,820 1380,820 1360,860" fill="none" stroke="white" stroke-width="1.5" opacity="0.1"/>
+    <polygon points="1353,833 1375,833 1364,852" fill="none" stroke="white" stroke-width="0.8" opacity="0.06"/>
+    <!-- Diamond top center -->
+    <polygon points="720,30 748,58 720,86 692,58" fill="none" stroke="white" stroke-width="1.5" opacity="0.08"/>
+    <!-- Dotwork cluster left -->
+    <circle cx="150" cy="760" r="3.5" fill="white" opacity="0.08"/>
+    <circle cx="173" cy="772" r="2.5" fill="white" opacity="0.06"/>
+    <circle cx="162" cy="745" r="2" fill="white" opacity="0.05"/>
+    <circle cx="138" cy="772" r="2" fill="white" opacity="0.04"/>
+    <circle cx="190" cy="758" r="1.5" fill="white" opacity="0.04"/>
+    <!-- Dotwork cluster right -->
+    <circle cx="1280" cy="150" r="3.5" fill="white" opacity="0.08"/>
+    <circle cx="1305" cy="162" r="2.5" fill="white" opacity="0.06"/>
+    <circle cx="1293" cy="138" r="2" fill="white" opacity="0.05"/>
+    <circle cx="1268" cy="162" r="2" fill="white" opacity="0.04"/>
+    <!-- Corner lines -->
+    <line x1="0" y1="0" x2="55" y2="55" stroke="white" stroke-width="0.5" opacity="0.06"/>
+    <line x1="1440" y1="0" x2="1385" y2="55" stroke="white" stroke-width="0.5" opacity="0.06"/>
+    <line x1="0" y1="900" x2="55" y2="845" stroke="white" stroke-width="0.5" opacity="0.06"/>
+    <line x1="1440" y1="900" x2="1385" y2="845" stroke="white" stroke-width="0.5" opacity="0.06"/>
+    <!-- Circle cross - decorative -->
+    <circle cx="1100" cy="800" r="28" fill="none" stroke="white" stroke-width="0.8" opacity="0.06"/>
+    <line x1="1100" y1="772" x2="1100" y2="828" stroke="white" stroke-width="0.6" opacity="0.06"/>
+    <line x1="1072" y1="800" x2="1128" y2="800" stroke="white" stroke-width="0.6" opacity="0.06"/>
+    <!-- Flower/rose tribal -->
+    <circle cx="360" cy="110" r="22" fill="none" stroke="white" stroke-width="0.8" opacity="0.05"/>
+    <line x1="360" y1="88" x2="360" y2="132" stroke="white" stroke-width="0.5" opacity="0.05"/>
+    <line x1="338" y1="110" x2="382" y2="110" stroke="white" stroke-width="0.5" opacity="0.05"/>
+    <line x1="344" y1="94" x2="376" y2="126" stroke="white" stroke-width="0.5" opacity="0.05"/>
+    <line x1="376" y1="94" x2="344" y2="126" stroke="white" stroke-width="0.5" opacity="0.05"/>
+    <!-- Arrow/spear shapes -->
+    <polygon points="900,820 910,800 920,820" fill="none" stroke="white" stroke-width="1" opacity="0.07"/>
+    <polygon points="530,60 540,40 550,60" fill="none" stroke="white" stroke-width="1" opacity="0.07"/>
+  </svg>
+
   <div class="hero-content reveal">
-    <p class="hero-eyebrow">Paris, France · Since 1923</p>
+    <p class="hero-eyebrow">Warszawa · Studio od 2015 roku</p>
     <h1>
-      <span class="hero-title-light">Timeless</span>
-      <em class="hero-title-accent">Luxury</em>
+      <span class="hero-title-light">TWOJA SKÓRA</span>
+      <em class="hero-title-accent">TO PŁÓTNO</em>
     </h1>
     <p class="hero-subtitle">
-      A private sanctuary of elegance, silence and comfort<br class="br-desktop">
-      in the heart of the City of Light.
+      Studio tatuażu, gdzie każdy projekt jest wyjątkowy.<br class="br-desktop">
+      Profesjonalizm, higiena i artyzm w jednym miejscu.
     </p>
     <div class="hero-actions">
-      <a href="#rooms" class="btn btn-gold btn-lg">View Rooms</a>
-      <a href="#spa" class="btn btn-outline btn-lg">Explore SPA</a>
+      <a href="#kontakt" class="btn btn-red btn-lg">Umów Wizytę</a>
+      <a href="#galeria" class="btn btn-outline btn-lg">Zobacz Portfolio</a>
     </div>
   </div>
 
   <div class="hero-scroll" aria-hidden="true">
-    <span>Scroll</span>
+    <span>Przewiń</span>
     <div class="scroll-line"></div>
   </div>
 
-  <div class="hero-badges" aria-label="Hotel awards">
+  <div class="hero-badges" aria-label="Wyróżnienia studia">
     <div class="hero-badge">
       <span class="badge-icon" aria-hidden="true">⭐</span>
       <div>
-        <strong>5-Star</strong>
-        <span>Luxury Hotel</span>
+        <strong>4.9/5</strong>
+        <span>Ocena Google</span>
       </div>
     </div>
     <div class="hero-divider" aria-hidden="true"></div>
     <div class="hero-badge">
-      <span class="badge-icon" aria-hidden="true">🏆</span>
+      <span class="badge-icon" aria-hidden="true">��</span>
       <div>
-        <strong>World's Best</strong>
-        <span>2024 Award</span>
+        <strong>Top Studio</strong>
+        <span>Warszawa 2024</span>
       </div>
     </div>
     <div class="hero-divider" aria-hidden="true"></div>
     <div class="hero-badge">
-      <span class="badge-icon" aria-hidden="true">🌹</span>
+      <span class="badge-icon" aria-hidden="true">🐍</span>
       <div>
-        <strong>Michelin</strong>
-        <span>Restaurant</span>
+        <strong>10+ Lat</strong>
+        <span>Doświadczenia</span>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- STATS -->
-<section class="stats" aria-label="Key figures">
-  <div class="stats-grid">
-    <div class="stat reveal" data-count="100" data-suffix="+">
-      <strong class="stat-number">100+</strong>
-      <span>Rooms &amp; Suites</span>
-    </div>
-    <div class="stat reveal" data-count="98" data-suffix="%">
-      <strong class="stat-number">98%</strong>
-      <span>Guest Satisfaction</span>
-    </div>
-    <div class="stat reveal" data-count="3" data-suffix="★">
-      <strong class="stat-number">3★</strong>
-      <span>Michelin Stars</span>
-    </div>
-    <div class="stat reveal" data-count="100" data-suffix="">
-      <strong class="stat-number">100</strong>
-      <span>Years of Excellence</span>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section about" aria-labelledby="about-heading">
+<section id="o-nas" class="section about" aria-labelledby="about-heading">
   <div class="container two-col">
-    <div class="about-visuals reveal">
-      <div class="about-img-stack">
-        <div class="about-img about-img-main" style="background-image:url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=700&q=80')" role="img" aria-label="Noir Palace lobby"></div>
-        <div class="about-img about-img-secondary" style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=450&q=80')" role="img" aria-label="Hotel exterior"></div>
-        <div class="about-award-badge" aria-label="Established 1923">
-          <span aria-hidden="true">⚜️</span>
-          <p>Est. 1923</p>
-        </div>
+    <div class="about-visual reveal">
+      <div class="about-img" style="background-image:url('https://images.unsplash.com/photo-1590246814883-57764bd7d8b0?w=800&q=80')" role="img" aria-label="Wnętrze Serpent Ink Studio"></div>
+      <div class="about-badge" aria-label="Założone w 2015">
+        <span class="about-badge-year">2015</span>
+        <p>Rok założenia</p>
       </div>
+      <!-- Decorative snake SVG on the card -->
+      <svg class="about-snake" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0,30 C20,10 40,50 60,30 C80,10 100,50 120,30 C140,10 160,50 180,30 C190,20 196,26 200,24"
+              stroke="#c41c1c" stroke-width="2" fill="none" opacity="0.4" stroke-linecap="round"/>
+        <ellipse cx="201" cy="23" rx="6" ry="4" stroke="#c41c1c" stroke-width="1.5" fill="none" opacity="0.4"/>
+      </svg>
     </div>
 
     <div class="text reveal">
-      <p class="eyebrow">Our Story</p>
-      <h2 id="about-heading">A Century of<br><em>Unrivalled Luxury</em></h2>
+      <p class="eyebrow">O Studiu</p>
+      <h2 id="about-heading">Pasja do sztuki<br><em>tatuażu</em></h2>
       <p class="lead">
-        Noir Palace is a luxury boutique hotel designed for guests who value
-        privacy, refined aesthetics and exceptional service.
+        Serpent Ink to nie tylko studio — to przestrzeń, gdzie wizje stają się trwałymi dziełami sztuki na Twojej skórze.
       </p>
       <p>
-        Every space is crafted to slow time down and deliver an unforgettable
-        experience. From our hand-picked art collection to our bespoke
-        in-room amenities — every detail tells a story.
+        Założone w 2015 roku przez Marka Wiśniewskiego, studio wyrobiło sobie markę dzięki perfekcji wykonania i indywidualnemu podejściu do każdego klienta. Pracujemy wyłącznie na markowych farbach i najnowocześniejszym sprzęcie, dbając o pełne bezpieczeństwo i higienę.
       </p>
-      <ul class="features-list" aria-label="Hotel features">
-        <li>
-          <span class="feature-icon" aria-hidden="true">🌟</span>
-          <div>
-            <strong>Five-star boutique standard</strong>
-            <span>Recognized by Forbes Travel Guide</span>
-          </div>
-        </li>
-        <li>
-          <span class="feature-icon" aria-hidden="true">🧖</span>
-          <div>
-            <strong>Private SPA &amp; wellness</strong>
-            <span>1,200 m² of pure relaxation</span>
-          </div>
-        </li>
-        <li>
-          <span class="feature-icon" aria-hidden="true">🍽️</span>
-          <div>
-            <strong>Fine dining restaurant</strong>
-            <span>3 Michelin-star cuisine</span>
-          </div>
-        </li>
-        <li>
-          <span class="feature-icon" aria-hidden="true">🛎️</span>
-          <div>
-            <strong>Concierge &amp; premium services</strong>
-            <span>Available 24/7 for every request</span>
-          </div>
-        </li>
-      </ul>
-      <a href="#contact" class="btn btn-gold">Book Your Stay</a>
+      <p>
+        Specjalizujemy się w projektach niestandardowych — od delikatnych fine line po rozbudowane realistyczne realizacje. Każdy tatuaż tworzymy od podstaw, we współpracy z klientem, aby efekt końcowy był dokładnie taki, jak sobie wymarzyłeś.
+      </p>
+      <div class="about-features" aria-label="Cechy studia">
+        <div class="about-feature">
+          <span class="about-feature-icon" aria-hidden="true">✓</span>
+          <span>Sterylne warunki & jednorazowe igły</span>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-icon" aria-hidden="true">✓</span>
+          <span>Bezpłatna konsultacja przed sesją</span>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-icon" aria-hidden="true">✓</span>
+          <span>Farby certyfikowane CE & vegan-friendly</span>
+        </div>
+        <div class="about-feature">
+          <span class="about-feature-icon" aria-hidden="true">✓</span>
+          <span>Opieka pielęgnacyjna po gojeniu</span>
+        </div>
+      </div>
+      <a href="#kontakt" class="btn btn-red">Umów Konsultację</a>
     </div>
   </div>
 </section>
 
-<!-- ROOMS -->
-<section id="rooms" class="section rooms" aria-labelledby="rooms-heading">
+<!-- STATS -->
+<section class="stats-section" aria-label="Nasze osiągnięcia">
+  <div class="stats-bg" aria-hidden="true"></div>
   <div class="container">
-    <div class="section-header reveal">
-      <p class="eyebrow">Accommodation</p>
-      <h2 id="rooms-heading">Rooms &amp; <em>Suites</em></h2>
-      <p class="section-desc">Each room is a private world of quiet luxury and masterful design.</p>
-    </div>
-
-    <div class="rooms-grid">
-      <article class="room-card reveal">
-        <div class="room-img" style="background-image:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=700&q=80')" role="img" aria-label="Deluxe Room interior">
-          <div class="room-price">From €220 / night</div>
-        </div>
-        <div class="room-body">
-          <h3>Deluxe Room</h3>
-          <p>Elegant comfort for two guests with city or garden views, king-size bed and Italian marble bathroom.</p>
-          <ul class="room-amenities" aria-label="Room features">
-            <li>35 m²</li>
-            <li>King bed</li>
-            <li>City view</li>
-            <li>Free mini-bar</li>
-          </ul>
-          <a href="#contact" class="btn btn-gold btn-sm">Reserve</a>
-        </div>
-      </article>
-
-      <article class="room-card room-featured reveal">
-        <div class="room-featured-badge">Most Popular</div>
-        <div class="room-img" style="background-image:url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=700&q=80')" role="img" aria-label="Executive Suite interior">
-          <div class="room-price">From €420 / night</div>
-        </div>
-        <div class="room-body">
-          <h3>Executive Suite</h3>
-          <p>Space, Eiffel Tower views and refined luxury. Separate living room, private terrace and butler service.</p>
-          <ul class="room-amenities" aria-label="Room features">
-            <li>65 m²</li>
-            <li>King bed</li>
-            <li>Eiffel view</li>
-            <li>Butler service</li>
-          </ul>
-          <a href="#contact" class="btn btn-gold btn-sm">Reserve</a>
-        </div>
-      </article>
-
-      <article class="room-card reveal">
-        <div class="room-img" style="background-image:url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=700&q=80')" role="img" aria-label="Presidential Suite interior">
-          <div class="room-price">From €790 / night</div>
-        </div>
-        <div class="room-body">
-          <h3>Presidential Suite</h3>
-          <p>Absolute privacy and prestige. Three rooms, private dining area, rooftop access and personal chef.</p>
-          <ul class="room-amenities" aria-label="Room features">
-            <li>120 m²</li>
-            <li>2 King beds</li>
-            <li>Rooftop</li>
-            <li>Personal chef</li>
-          </ul>
-          <a href="#contact" class="btn btn-gold btn-sm">Reserve</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- DINING -->
-<section id="dining" class="section dining" aria-labelledby="dining-heading">
-  <div class="container two-col two-col-reverse">
-    <div class="text reveal">
-      <p class="eyebrow">Fine Dining</p>
-      <h2 id="dining-heading">Restaurant<br><em>Le Soir Noir</em></h2>
-      <p class="lead">
-        An extraordinary culinary journey guided by Michelin-starred
-        Chef Armand Boulanger.
-      </p>
-      <p>
-        Seasonal menus crafted from the finest local ingredients,
-        complemented by a wine cellar housing over 4,000 labels.
-        An evening at Le Soir Noir is a meal you will remember forever.
-      </p>
-      <div class="dining-hours" aria-label="Opening hours">
-        <div class="dining-hour-item">
-          <strong>Breakfast</strong>
-          <span>07:00 – 11:00</span>
-        </div>
-        <div class="dining-hour-item">
-          <strong>Lunch</strong>
-          <span>12:00 – 15:00</span>
-        </div>
-        <div class="dining-hour-item">
-          <strong>Dinner</strong>
-          <span>19:00 – 23:00</span>
-        </div>
+    <div class="stats-grid">
+      <div class="stat reveal" data-count="10" data-suffix="+">
+        <span class="stat-number">0+</span>
+        <span class="stat-label">Lat doświadczenia</span>
       </div>
-      <a href="#contact" class="btn btn-gold">Reserve a Table</a>
-    </div>
-
-    <div class="dining-visual reveal">
-      <div class="dining-img" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80')" role="img" aria-label="Le Soir Noir restaurant"></div>
-      <div class="dining-badge" aria-label="3 Michelin Stars">
-        <span aria-hidden="true">🌹</span>
-        <p>3 Michelin Stars</p>
+      <div class="stat reveal" data-count="3000" data-suffix="+">
+        <span class="stat-number">0+</span>
+        <span class="stat-label">Wykonanych projektów</span>
+      </div>
+      <div class="stat reveal" data-count="5" data-suffix="">
+        <span class="stat-number">0</span>
+        <span class="stat-label">Artystów w studiu</span>
+      </div>
+      <div class="stat reveal" data-count="98" data-suffix="%">
+        <span class="stat-number">0%</span>
+        <span class="stat-label">Zadowolonych klientów</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SPA -->
-<section id="spa" class="section spa" aria-labelledby="spa-heading">
-  <div class="spa-bg" aria-hidden="true"></div>
+<!-- SERVICES -->
+<section class="section services" aria-labelledby="services-heading">
   <div class="container">
     <div class="section-header section-header-center reveal">
-      <p class="eyebrow">Wellness &amp; Beauty</p>
-      <h2 id="spa-heading">SPA &amp; <em>Wellness</em></h2>
-      <p class="section-desc">A sanctuary for body and mind across 1,200 m² of pure serenity.</p>
+      <p class="eyebrow">Co Oferujemy</p>
+      <h2 id="services-heading">Nasze <em>Specjalizacje</em></h2>
+      <p class="section-desc">Każdy styl tatuażu wymaga innego podejścia. Nasz zespół opanował je wszystkie.</p>
     </div>
 
-    <div class="spa-grid">
-      <div class="spa-card reveal">
-        <div class="spa-icon" aria-hidden="true">🧖</div>
-        <h3>Signature Massages</h3>
-        <p>Tailored treatments using premium organic products for deep relaxation and renewal.</p>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24,4 C24,4 8,14 8,28 C8,36.8 15.2,44 24,44 C32.8,44 40,36.8 40,28 C40,14 24,4 24,4 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M16,28 C16,28 20,22 24,22 C28,22 32,28 32,28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Tatuaż Niestandardowy</h3>
+        <p>Twój pomysł, nasza realizacja. Projektujemy unikalne motywy dopasowane do Twojej osobowości i ciała.</p>
       </div>
-      <div class="spa-card reveal">
-        <div class="spa-icon" aria-hidden="true">🏊</div>
-        <h3>Infinity Pool</h3>
-        <p>Indoor heated pool with panoramic views over the Parisian skyline.</p>
+
+      <div class="service-card reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M14,24 C14,18.5 18.5,14 24,14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M34,24 C34,29.5 29.5,34 24,34" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <h3>Black &amp; Grey</h3>
+        <p>Mistrzostwo cienia i gradientu. Realistyczne portrety, wildlife i motywy architektoniczne.</p>
       </div>
-      <div class="spa-card reveal">
-        <div class="spa-icon" aria-hidden="true">🔥</div>
-        <h3>Finnish Sauna</h3>
-        <p>Traditional Finnish sauna combined with a Himalayan salt steam room.</p>
+
+      <div class="service-card reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8,40 Q20,10 32,20 Q44,30 36,40" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M14,38 Q22,18 30,26 Q38,34 32,40" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+          </svg>
+        </div>
+        <h3>Fine Line</h3>
+        <p>Delikatne, precyzyjne linie. Kwiaty, geometria, minimalistyczne wzory pełne elegancji.</p>
       </div>
-      <div class="spa-card reveal">
-        <div class="spa-icon" aria-hidden="true">💆</div>
-        <h3>Beauty Studio</h3>
-        <p>Full-service hair, nail and make-up salon by top Parisian stylists.</p>
+
+      <div class="service-card reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="32" height="32" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M8,24 L40,24 M24,8 L24,40 M12,12 L36,36 M36,12 L12,36" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Cover-up</h3>
+        <p>Tchnij nowe życie w stary tatuaż. Profesjonalne przykrycie blizn i przestarzałych wzorów.</p>
       </div>
-      <div class="spa-card reveal">
-        <div class="spa-icon" aria-hidden="true">🧘</div>
-        <h3>Yoga &amp; Meditation</h3>
-        <p>Daily sessions with certified instructors in our rooftop studio.</p>
+
+      <div class="service-card reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24,8 L28,18 L38,18 L30,26 L33,36 L24,30 L15,36 L18,26 L10,18 L20,18 Z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Neo-Traditional</h3>
+        <p>Klasyczne motywy w nowoczesnym wydaniu — śmiałe kolory, wyraziste kontury, bogata symbolika.</p>
       </div>
-      <div class="spa-card reveal">
-        <div class="spa-icon" aria-hidden="true">💪</div>
-        <h3>Fitness Centre</h3>
-        <p>State-of-the-art gym with personal trainers available on request.</p>
+
+      <div class="service-card reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24,8 L24,40 M8,24 L40,24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+          </svg>
+        </div>
+        <h3>Dotwork &amp; Geometria</h3>
+        <p>Mandaleowe wzory, trójkąty i précyzyjny dotwork tworzący hipnotyzujące kompozycje.</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="spa-cta reveal">
-      <a href="#contact" class="btn btn-gold btn-lg">Book SPA Treatment</a>
+<!-- ARTISTS -->
+<section id="artysci" class="section artists" aria-labelledby="artists-heading">
+  <div class="artists-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <p class="eyebrow">Nasz Zespół</p>
+      <h2 id="artists-heading">Poznaj <em>Artystów</em></h2>
+      <p class="section-desc">Czterech mistrzów, cztery unikalne style — jedno studio pełne pasji do tatuażu.</p>
+    </div>
+
+    <div class="artists-grid">
+      <article class="artist-card reveal">
+        <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80')" role="img" aria-label="Marek Wiśniewski - artysta tatuażu">
+          <div class="artist-overlay">
+            <a href="#kontakt" class="btn btn-red btn-sm">Umów Wizytę</a>
+          </div>
+        </div>
+        <div class="artist-body">
+          <h3>Marek <span class="artist-nick">"Shadow"</span> Wiśniewski</h3>
+          <p class="artist-specialty">Black &amp; Grey Realism</p>
+          <p>12 lat w zawodzie. Mistrz fotorealistycznych portretów i wildlife. Finalizował szkolenia w Berlinie i Londynie.</p>
+          <div class="artist-tags" aria-label="Specjalizacje">
+            <span class="tag">Portrety</span>
+            <span class="tag">Wildlife</span>
+            <span class="tag">Realism</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="artist-card reveal">
+        <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1494790108755-2616b612b786?w=500&q=80')" role="img" aria-label="Anna Kowalczyk - artystka tatuażu">
+          <div class="artist-overlay">
+            <a href="#kontakt" class="btn btn-red btn-sm">Umów Wizytę</a>
+          </div>
+        </div>
+        <div class="artist-body">
+          <h3>Anna <span class="artist-nick">"Flora"</span> Kowalczyk</h3>
+          <p class="artist-specialty">Fine Line &amp; Botanika</p>
+          <p>7 lat doświadczenia. Specjalizuje się w delikatnych roślinnych motywach i abstrakcji. Jej prace zdobyły nagrody na Warsaw Tattoo Convention.</p>
+          <div class="artist-tags" aria-label="Specjalizacje">
+            <span class="tag">Fine Line</span>
+            <span class="tag">Kwiaty</span>
+            <span class="tag">Minimalizm</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="artist-card reveal">
+        <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1542213487-27e30ae26ff7?w=500&q=80')" role="img" aria-label="Dawid Nowak - artysta tatuażu">
+          <div class="artist-overlay">
+            <a href="#kontakt" class="btn btn-red btn-sm">Umów Wizytę</a>
+          </div>
+        </div>
+        <div class="artist-body">
+          <h3>Dawid <span class="artist-nick">"Venom"</span> Nowak</h3>
+          <p class="artist-specialty">Neo-Japanese &amp; Traditional</p>
+          <p>9 lat w branży. Ekspert w japońskich motywach: smoki, karpie koi, chryzantemy. Szkolony przez mistrzów w Tokio.</p>
+          <div class="artist-tags" aria-label="Specjalizacje">
+            <span class="tag">Japanese</span>
+            <span class="tag">Smoki</span>
+            <span class="tag">Traditional</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="artist-card reveal">
+        <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&q=80')" role="img" aria-label="Zofia Adamska - artystka tatuażu">
+          <div class="artist-overlay">
+            <a href="#kontakt" class="btn btn-red btn-sm">Umów Wizytę</a>
+          </div>
+        </div>
+        <div class="artist-body">
+          <h3>Zofia <span class="artist-nick">"Pixel"</span> Adamska</h3>
+          <p class="artist-specialty">Geometric &amp; Dotwork</p>
+          <p>5 lat praktyki, absolwentka ASP. Tworzy hipnotyzujące wzory geometryczne i mandaleowe. Każdy projekt precyzyjnie zaplanowany matematycznie.</p>
+          <div class="artist-tags" aria-label="Specjalizacje">
+            <span class="tag">Geometria</span>
+            <span class="tag">Dotwork</span>
+            <span class="tag">Mandala</span>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- GALLERY -->
-<section id="gallery" class="section gallery" aria-labelledby="gallery-heading">
+<section id="galeria" class="section gallery" aria-labelledby="gallery-heading">
   <div class="container">
     <div class="section-header section-header-center reveal">
-      <p class="eyebrow">Visual Story</p>
-      <h2 id="gallery-heading">Our <em>Gallery</em></h2>
+      <p class="eyebrow">Portfolio</p>
+      <h2 id="gallery-heading">Nasze <em>Realizacje</em></h2>
+      <p class="section-desc">Każdy projekt to unikalna opowieść zapisana na skórze. Oto część naszego portfolio.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall reveal" role="img" aria-label="Tatuaż realistyczny - portret"
+           style="background-image:url('https://images.unsplash.com/photo-1562851529-c370841f6536?w=700&q=80')">
+        <div class="gallery-overlay"><span>Black &amp; Grey Realism</span></div>
+      </div>
+      <div class="gallery-item reveal" role="img" aria-label="Tatuaż fine line - botanika"
+           style="background-image:url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=700&q=80')">
+        <div class="gallery-overlay"><span>Fine Line</span></div>
+      </div>
+      <div class="gallery-item reveal" role="img" aria-label="Tatuaż geometryczny"
+           style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80')">
+        <div class="gallery-overlay"><span>Geometria</span></div>
+      </div>
+      <div class="gallery-item gallery-item--wide reveal" role="img" aria-label="Tatuaż japoński - smok"
+           style="background-image:url('https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=700&q=80')">
+        <div class="gallery-overlay"><span>Neo-Japanese</span></div>
+      </div>
+      <div class="gallery-item reveal" role="img" aria-label="Tatuaż neo-traditional"
+           style="background-image:url('https://images.unsplash.com/photo-1612178537253-bccd437b730e?w=700&q=80')">
+        <div class="gallery-overlay"><span>Neo-Traditional</span></div>
+      </div>
+      <div class="gallery-item reveal" role="img" aria-label="Tatuaż dotwork - mandala"
+           style="background-image:url('https://images.unsplash.com/photo-1611501276890-5f23dfd75c19?w=700&q=80')">
+        <div class="gallery-overlay"><span>Dotwork</span></div>
+      </div>
+      <div class="gallery-item gallery-item--tall reveal" role="img" aria-label="Tatuaż sleeve - rękaw"
+           style="background-image:url('https://images.unsplash.com/photo-1527576539890-dfa815648363?w=700&q=80')">
+        <div class="gallery-overlay"><span>Full Sleeve</span></div>
+      </div>
+      <div class="gallery-item reveal" role="img" aria-label="Tatuaż cover-up"
+           style="background-image:url('https://images.unsplash.com/photo-1523293836978-3e4ed0f28e05?w=700&q=80')">
+        <div class="gallery-overlay"><span>Cover-up</span></div>
+      </div>
+    </div>
+
+    <div class="gallery-cta reveal">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+        Zobacz więcej na Instagramie
+      </a>
     </div>
   </div>
+</section>
 
-  <div class="gallery-grid" role="list" aria-label="Hotel photo gallery">
-    <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1551882547-ff40c4fe1fa7?w=900&q=80')" role="listitem" aria-label="Hotel lobby"></div>
-    <div class="gallery-item tall" style="background-image:url('https://images.unsplash.com/photo-1590490360182-c33d57733427?w=900&q=80')" role="listitem" aria-label="Hotel room"></div>
-    <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900&q=80')" role="listitem" aria-label="Hotel pool"></div>
-    <div class="gallery-item wide" style="background-image:url('https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1400&q=80')" role="listitem" aria-label="Hotel terrace"></div>
-    <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1540541338287-41700207dee6?w=900&q=80')" role="listitem" aria-label="SPA area"></div>
-    <div class="gallery-item" style="background-image:url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=900&q=80')" role="listitem" aria-label="Hotel suite"></div>
+<!-- PRICING -->
+<section id="cennik" class="section pricing" aria-labelledby="pricing-heading">
+  <div class="pricing-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <p class="eyebrow">Cennik</p>
+      <h2 id="pricing-heading">Przejrzyste <em>Ceny</em></h2>
+      <p class="section-desc">Ostateczna cena zależy od rozmiaru, złożoności i miejsca tatuażu. Wycena zawsze bezpłatna.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card reveal">
+        <div class="pricing-header">
+          <h3>Mały Tatuaż</h3>
+          <p class="pricing-size">do 5 cm</p>
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-from">od</span>
+          <span class="pricing-amount">200</span>
+          <span class="pricing-currency">zł</span>
+        </div>
+        <ul class="pricing-features" aria-label="Co zawiera">
+          <li>Projekt graficzny</li>
+          <li>Sesja do 1,5 h</li>
+          <li>Sterylny sprzęt</li>
+          <li>Zalecenia pielęgnacyjne</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-outline btn-full">Umów wizytę</a>
+      </div>
+
+      <div class="pricing-card pricing-card--featured reveal">
+        <div class="pricing-badge">Najpopularniejszy</div>
+        <div class="pricing-header">
+          <h3>Średni Tatuaż</h3>
+          <p class="pricing-size">5–15 cm</p>
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-from">od</span>
+          <span class="pricing-amount">400</span>
+          <span class="pricing-currency">zł</span>
+        </div>
+        <ul class="pricing-features" aria-label="Co zawiera">
+          <li>Projekt + korekty</li>
+          <li>Sesja do 3 h</li>
+          <li>Sterylny sprzęt</li>
+          <li>Zalecenia pielęgnacyjne</li>
+          <li>Retusz gratis</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-red btn-full">Umów wizytę</a>
+      </div>
+
+      <div class="pricing-card reveal">
+        <div class="pricing-header">
+          <h3>Duży Tatuaż</h3>
+          <p class="pricing-size">15–30 cm</p>
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-from">od</span>
+          <span class="pricing-amount">800</span>
+          <span class="pricing-currency">zł</span>
+        </div>
+        <ul class="pricing-features" aria-label="Co zawiera">
+          <li>Projekt + korekty</li>
+          <li>Sesja do 6 h</li>
+          <li>Sterylny sprzęt</li>
+          <li>Zalecenia pielęgnacyjne</li>
+          <li>Retusz gratis</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-outline btn-full">Umów wizytę</a>
+      </div>
+
+      <div class="pricing-card reveal">
+        <div class="pricing-header">
+          <h3>Rękaw / Back Piece</h3>
+          <p class="pricing-size">Projekt kompleksowy</p>
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-from">od</span>
+          <span class="pricing-amount">3000</span>
+          <span class="pricing-currency">zł</span>
+        </div>
+        <ul class="pricing-features" aria-label="Co zawiera">
+          <li>Koncepcja + projekt</li>
+          <li>Wiele sesji</li>
+          <li>Priorytetowe terminy</li>
+          <li>Opieka artysty</li>
+          <li>Retusze gratis</li>
+        </ul>
+        <a href="#kontakt" class="btn btn-outline btn-full">Wycena indywidualna</a>
+      </div>
+    </div>
+
+    <div class="pricing-note reveal">
+      <p>
+        <strong>Cover-up</strong> — od 500 zł · <strong>Konsultacja</strong> — Bezpłatna ·
+        <strong>Depozyt</strong> — wymagany przy rezerwacji (zaliczka na poczet ceny)
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process" aria-labelledby="process-heading">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <p class="eyebrow">Jak działamy</p>
+      <h2 id="process-heading">Twoja droga do <em>wymarzonego tatuażu</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="process-number" aria-hidden="true">01</div>
+        <h3>Konsultacja</h3>
+        <p>Spotkaj się z artystą online lub osobiście. Omówimy Twój pomysł, styl i umiejscowienie. Bezpłatnie.</p>
+      </div>
+      <div class="process-connector" aria-hidden="true"></div>
+      <div class="process-step reveal">
+        <div class="process-number" aria-hidden="true">02</div>
+        <h3>Projekt</h3>
+        <p>Artysta tworzy indywidualny projekt graficzny dopasowany do Twojego ciała i wizji.</p>
+      </div>
+      <div class="process-connector" aria-hidden="true"></div>
+      <div class="process-step reveal">
+        <div class="process-number" aria-hidden="true">03</div>
+        <h3>Sesja</h3>
+        <p>W sterylnych warunkach i komfortowej atmosferze zamieniamy projekt w trwałe dzieło sztuki.</p>
+      </div>
+      <div class="process-connector" aria-hidden="true"></div>
+      <div class="process-step reveal">
+        <div class="process-number" aria-hidden="true">04</div>
+        <h3>Pielęgnacja</h3>
+        <p>Dostaniesz pełne instrukcje i produkty do pielęgnacji. Jesteśmy do dyspozycji przez cały czas gojenia.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="section testimonials" aria-labelledby="testimonials-heading">
+  <div class="testimonials-bg" aria-hidden="true"></div>
   <div class="container">
     <div class="section-header section-header-center reveal">
-      <p class="eyebrow">Guest Reviews</p>
-      <h2 id="testimonials-heading">What Our Guests <em>Say</em></h2>
+      <p class="eyebrow">Opinie Klientów</p>
+      <h2 id="testimonials-heading">Co mówią <em>nasi klienci</em></h2>
     </div>
-
     <div class="testimonials-grid">
-      <blockquote class="testimonial reveal">
-        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
-        <p>"Noir Palace exceeded every expectation. The service, the rooms, the restaurant — pure perfection. We'll be back every anniversary."</p>
+      <blockquote class="testimonial-card reveal">
+        <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
+        <p>"Marek wykonał niesamowity portret realistyczny mojej babci. Każdy detal idealnie odwzorowany. Studio jest czyste, profesjonalne i bardzo przytulne. Polecam z całego serca!"</p>
         <footer>
-          <strong>Sophia M.</strong>
-          <span>Paris, France</span>
+          <strong>Piotr K.</strong>
+          <span>Warszawa</span>
         </footer>
       </blockquote>
-
-      <blockquote class="testimonial testimonial-featured reveal">
-        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
-        <p>"The most memorable hotel experience I have ever had. The Presidential Suite was worth every euro. The staff anticipated needs before we even thought of them."</p>
+      <blockquote class="testimonial-card reveal">
+        <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
+        <p>"Anna to absolutna artystka fine line! Moje kwiaty wyszły lepiej niż na pinach z Pinteresta. Obsługa profesjonalna, a cały proces był bardzo komfortowy. Wracam po więcej!"</p>
         <footer>
-          <strong>James R.</strong>
-          <span>London, UK</span>
+          <strong>Marta W.</strong>
+          <span>Kraków</span>
         </footer>
       </blockquote>
-
-      <blockquote class="testimonial reveal">
-        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
-        <p>"Le Soir Noir restaurant is a culinary masterpiece. Combined with the SPA treatments, this was the most restorative week of my life."</p>
+      <blockquote class="testimonial-card reveal">
+        <div class="stars" aria-label="5 gwiazdek">★★★★★</div>
+        <p>"Dawid stworzył mi japoński rękaw w 4 sesjach. Kolory, detale, kompozycja — wszystko na najwyższym poziomie. Już widzę znajomych z otwartymi buziami. Studio polecam każdemu!"</p>
         <footer>
-          <strong>Elena V.</strong>
-          <span>Milan, Italy</span>
+          <strong>Kamil R.</strong>
+          <span>Gdańsk</span>
         </footer>
       </blockquote>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta" aria-label="Call to action">
-  <div class="cta-bg" aria-hidden="true"></div>
-  <div class="cta-content reveal">
-    <p class="eyebrow">Ready to Experience Luxury?</p>
-    <h2>Your Stay Begins <em>Here</em></h2>
-    <p>Reserve your room and experience true luxury in the heart of Paris.</p>
-    <div class="cta-actions">
-      <a href="#contact" class="btn btn-gold btn-lg">Reserve Now</a>
-      <a href="tel:+33700000000" class="btn btn-outline btn-lg">Call Us</a>
+<!-- FAQ -->
+<section id="faq" class="section faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <p class="eyebrow">Pytania i Odpowiedzi</p>
+      <h2 id="faq-heading">Najczęstsze <em>pytania</em></h2>
+    </div>
+
+    <div class="faq-list reveal" role="list">
+      <div class="faq-item" role="listitem">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-1">
+          <span>Czy tatuowanie boli?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer" id="faq-1" role="region" hidden>
+          <p>Ból zależy od miejsca i indywidualnej wrażliwości. Najbardziej wrażliwe obszary to żebra, stopy, dłonie i szyja. Większość klientów opisuje odczucia jako "zarysowanie" lub "swędzenie". Nasz zespół zadba o Twój komfort podczas całej sesji, robiąc przerwy gdy potrzebujesz.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-2">
+          <span>Jak przygotować się do sesji?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer" id="faq-2" role="region" hidden>
+          <p>Przed sesją zadbaj o dobrze nawilżoną skórę przez kilka dni. W dniu tatuowania zjedz porządny posiłek i nawodnij się. Ubierz się tak, żeby artysta miał łatwy dostęp do tatuowanego miejsca. Unikaj alkoholu minimum 24h przed sesją.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-3">
+          <span>Ile trwa gojenie tatuażu?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer" id="faq-3" role="region" hidden>
+          <p>Zewnętrzne gojenie trwa 2–3 tygodnie. Pełne gojenie skóry "od środka" to ok. 3–4 miesiące. W tym czasie nie wystawiaj tatuażu na słońce i basen. Dostaniesz od nas szczegółowe instrukcje pielęgnacyjne oraz maść wspomagającą gojenie.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-4">
+          <span>Ile kosztuje konsultacja?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer" id="faq-4" role="region" hidden>
+          <p>Konsultacja jest całkowicie bezpłatna! Możesz skontaktować się z nami telefonicznie, mailowo lub przez formularz. Jeśli chcesz spotkać się osobiście, umów się na wizytę w studiu — przyjedziemy z pomysłami i próbkami.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-5">
+          <span>Czy robicie cover-up starych tatuaży?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer" id="faq-5" role="region" hidden>
+          <p>Tak! Specjalizujemy się w cover-upach. Wyślij nam zdjęcie starego tatuażu, a ocenimy możliwości i zaproponujemy rozwiązanie. W niektórych przypadkach rekomendujemy wcześniejsze rozjaśnienie laserem dla lepszego efektu końcowego.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-6">
+          <span>Czy przyjmujecie depozyty?</span>
+          <svg class="faq-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="faq-answer" id="faq-6" role="region" hidden>
+          <p>Tak, depozyt (zazwyczaj 100–200 zł) jest wymagany przy rezerwacji terminu i jest wliczany w końcową cenę tatuażu. Gwarantuje on Twój termin i pokrywa pracę artysty nad projektem. Depozyt jest bezzwrotny w przypadku odwołania wizyty na mniej niż 48h przed sesją.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section contact" aria-labelledby="contact-heading">
+<section id="kontakt" class="section contact" aria-labelledby="contact-heading">
   <div class="container">
     <div class="section-header section-header-center reveal">
-      <p class="eyebrow">Get In Touch</p>
-      <h2 id="contact-heading">Contact &amp; <em>Reservations</em></h2>
+      <p class="eyebrow">Kontakt</p>
+      <h2 id="contact-heading">Umów się <em>na wizytę</em></h2>
+      <p class="section-desc">Napisz do nas lub zadzwoń. Odpowiadamy w ciągu 24 godzin.</p>
     </div>
 
     <div class="contact-grid">
       <div class="contact-info reveal">
-        <div class="contact-item">
-          <span class="contact-icon" aria-hidden="true">📍</span>
+        <div class="contact-info-item">
+          <div class="contact-info-icon" aria-hidden="true">📍</div>
           <div>
-            <strong>Address</strong>
-            <p>12 Rue de la Paix, 75001 Paris, France</p>
+            <strong>Adres</strong>
+            <p>ul. Złota 44, 00-120 Warszawa<br>(wejście od ul. Zgoda)</p>
           </div>
         </div>
-        <div class="contact-item">
-          <span class="contact-icon" aria-hidden="true">📞</span>
+        <div class="contact-info-item">
+          <div class="contact-info-icon" aria-hidden="true">📞</div>
           <div>
-            <strong>Phone</strong>
-            <p><a href="tel:+33700000000">+33 700 000 000</a></p>
+            <strong>Telefon</strong>
+            <p><a href="tel:+48500888999">+48 500 888 999</a></p>
           </div>
         </div>
-        <div class="contact-item">
-          <span class="contact-icon" aria-hidden="true">✉️</span>
+        <div class="contact-info-item">
+          <div class="contact-info-icon" aria-hidden="true">✉️</div>
           <div>
             <strong>Email</strong>
-            <p><a href="mailto:reservations@noirpalace.com">reservations@noirpalace.com</a></p>
+            <p><a href="mailto:studio@serpentink.pl">studio@serpentink.pl</a></p>
           </div>
         </div>
-        <div class="contact-item">
-          <span class="contact-icon" aria-hidden="true">🕐</span>
+        <div class="contact-info-item">
+          <div class="contact-info-icon" aria-hidden="true">🕐</div>
           <div>
-            <strong>Check-in / Check-out</strong>
-            <p>15:00 / 12:00</p>
+            <strong>Godziny otwarcia</strong>
+            <p>Pon–Pt: 10:00–20:00<br>Sob: 10:00–18:00<br>Niedz: Zamknięte</p>
           </div>
         </div>
-        <div class="contact-social" aria-label="Social media">
-          <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
-          <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
-          <a href="#" aria-label="X (Twitter)" class="social-link">Twitter</a>
+        <div class="contact-socials" aria-label="Media społecznościowe">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
       </div>
 
-      <form class="contact-form reveal" id="contactForm" novalidate aria-label="Reservation form">
+      <form class="contact-form reveal" id="contactForm" novalidate aria-label="Formularz kontaktowy">
         <div class="form-row">
           <div class="form-group">
-            <label for="fname">Name *</label>
-            <input type="text" id="fname" name="name" placeholder="Your full name" required autocomplete="name">
+            <label for="fname">Imię i Nazwisko *</label>
+            <input type="text" id="fname" name="name" placeholder="Jan Kowalski" required autocomplete="name">
           </div>
           <div class="form-group">
-            <label for="femail">Email *</label>
-            <input type="email" id="femail" name="email" placeholder="your@email.com" required autocomplete="email">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="fcheckin">Check-in</label>
-            <input type="date" id="fcheckin" name="checkin">
-          </div>
-          <div class="form-group">
-            <label for="fcheckout">Check-out</label>
-            <input type="date" id="fcheckout" name="checkout">
+            <label for="fphone">Telefon</label>
+            <input type="tel" id="fphone" name="phone" placeholder="+48 500 000 000" autocomplete="tel">
           </div>
         </div>
         <div class="form-group">
-          <label for="froom">Room Type</label>
-          <select id="froom" name="room">
-            <option value="">Select room type</option>
-            <option value="deluxe">Deluxe Room — from €220 / night</option>
-            <option value="executive">Executive Suite — from €420 / night</option>
-            <option value="presidential">Presidential Suite — from €790 / night</option>
+          <label for="femail">Adres Email *</label>
+          <input type="email" id="femail" name="email" placeholder="jan@email.pl" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="fstyle">Styl tatuażu</label>
+          <select id="fstyle" name="style">
+            <option value="">— Wybierz styl —</option>
+            <option>Custom / Niestandardowy</option>
+            <option>Black &amp; Grey Realism</option>
+            <option>Fine Line</option>
+            <option>Neo-Japanese / Traditional</option>
+            <option>Geometric / Dotwork</option>
+            <option>Cover-up</option>
+            <option>Inne</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="fmessage">Message</label>
-          <textarea id="fmessage" name="message" placeholder="Special requests, questions…" rows="4"></textarea>
+          <label for="fmessage">Opisz swój pomysł</label>
+          <textarea id="fmessage" name="message" rows="4" placeholder="Powiedz nam o swoim wymarzonym tatuażu — motyw, miejsce, orientacyjny rozmiar..."></textarea>
         </div>
-        <button type="submit" class="btn btn-gold btn-full">Send Reservation Request</button>
+        <button type="submit" class="btn btn-red btn-lg btn-full">Wyślij Zapytanie</button>
+        <p class="form-note">* Pola wymagane. Odpowiadamy w ciągu 24h.</p>
       </form>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-inner">
+<footer class="footer" role="contentinfo">
+  <div class="footer-snake" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C120,10 240,70 360,40 C480,10 600,70 720,40 C840,10 960,70 1080,40 C1200,10 1320,70 1440,40"
+            stroke="rgba(196,28,28,0.3)" stroke-width="2" fill="none"/>
+    </svg>
+  </div>
+  <div class="footer-content">
     <div class="footer-brand">
-      <div class="logo footer-logo">NOIR <strong>PALACE</strong></div>
-      <p>A private sanctuary of elegance,<br>silence and comfort.</p>
+      <a href="#hero" class="footer-logo" aria-label="Serpent Ink — Strona Główna">SERPENT <strong>INK</strong></a>
+      <p>Studio tatuażu w Warszawie. Tworzymy unikalne dzieła sztuki od 2015 roku.</p>
+      <div class="footer-socials" aria-label="Media społecznościowe">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
     </div>
 
-    <div class="footer-links">
+    <div class="footer-links-group">
       <div class="footer-col">
-        <h4>Hotel</h4>
-        <a href="#about">Our Story</a>
-        <a href="#rooms">Rooms &amp; Suites</a>
-        <a href="#dining">Restaurant</a>
-        <a href="#spa">SPA &amp; Wellness</a>
-        <a href="#gallery">Gallery</a>
+        <h4>Studio</h4>
+        <a href="#o-nas">O Nas</a>
+        <a href="#artysci">Nasz Zespół</a>
+        <a href="#galeria">Portfolio</a>
+        <a href="#cennik">Cennik</a>
+        <a href="#faq">FAQ</a>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
-        <a href="#contact">Reservations</a>
-        <a href="#contact">Concierge</a>
-        <a href="#contact">Events</a>
-        <a href="#contact">Private Transfers</a>
-        <a href="#contact">Gift Cards</a>
+        <h4>Usługi</h4>
+        <a href="#kontakt">Custom Tatuaż</a>
+        <a href="#kontakt">Black &amp; Grey</a>
+        <a href="#kontakt">Fine Line</a>
+        <a href="#kontakt">Cover-up</a>
+        <a href="#kontakt">Neo-Japanese</a>
       </div>
       <div class="footer-col">
-        <h4>Contact</h4>
-        <a href="tel:+33700000000">+33 700 000 000</a>
-        <a href="mailto:reservations@noirpalace.com">reservations@noirpalace.com</a>
-        <a href="#contact">12 Rue de la Paix</a>
-        <a href="#contact">75001 Paris, France</a>
+        <h4>Kontakt</h4>
+        <a href="tel:+48500888999">+48 500 888 999</a>
+        <a href="mailto:studio@serpentink.pl">studio@serpentink.pl</a>
+        <a href="#kontakt">ul. Złota 44</a>
+        <a href="#kontakt">00-120 Warszawa</a>
       </div>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>© 2026 Noir Palace · All rights reserved</p>
+    <p>© 2026 Serpent Ink · Wszelkie prawa zastrzeżone</p>
     <p class="footer-demo">Strona demonstracyjna — <a href="https://kontaktio.pl">Kontaktio 2026</a></p>
   </div>
 </footer>
@@ -547,57 +883,57 @@
 <!-- KONTAKTIO WIDGET SKIN -->
 <style>
 :root {
-  --k-accent: #d4af37;
-  --k-accent2: #8b6c1f;
-  --k-glass: rgba(18,18,18,.85);
-  --k-border: rgba(255,255,255,.10);
-  --k-text: rgba(255,255,255,.92);
-  --k-muted: rgba(255,255,255,.65);
+  --k-accent:  #c41c1c;
+  --k-accent2: #8b0000;
+  --k-glass:   rgba(10,10,10,.90);
+  --k-border:  rgba(255,255,255,.10);
+  --k-text:    rgba(255,255,255,.92);
+  --k-muted:   rgba(255,255,255,.60);
 }
 .kontaktio-launcher {
   width: 64px !important; height: 64px !important;
   border-radius: 999px !important;
   background: radial-gradient(circle at 30% 30%, var(--k-accent), var(--k-accent2)) !important;
-  border: 1px solid rgba(255,255,255,.18) !important;
-  box-shadow: 0 22px 70px rgba(0,0,0,.75), 0 0 0 14px rgba(212,175,55,.22), 0 0 0 30px rgba(139,108,31,.12) !important;
+  border: 1px solid rgba(255,255,255,.15) !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,.80), 0 0 0 12px rgba(196,28,28,.18), 0 0 0 26px rgba(139,0,0,.10) !important;
   position: fixed !important; bottom: 28px !important; right: 28px !important;
   z-index: 999999 !important; overflow: hidden; cursor: pointer; transition: transform .25s ease;
 }
 .kontaktio-launcher:hover { transform: translateY(-4px) scale(1.05); }
 .kontaktio-launcher::before {
   content: ""; position: absolute; inset: -45%;
-  background: radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,.35), transparent 60%), radial-gradient(60% 60% at 70% 70%, rgba(255,255,255,.12), transparent 62%);
+  background: radial-gradient(60% 60% at 30% 30%, rgba(255,255,255,.30), transparent 60%), radial-gradient(60% 60% at 70% 70%, rgba(255,255,255,.10), transparent 62%);
   filter: blur(8px); animation: kAurora 6.5s ease-in-out infinite;
 }
 .kontaktio-launcher::after {
   content: ""; position: absolute; inset: 0; border-radius: 999px;
-  background: linear-gradient(135deg, rgba(255,255,255,.15), transparent 60%); opacity: .35;
+  background: linear-gradient(135deg, rgba(255,255,255,.18), transparent 60%); opacity: .35;
 }
-.kontaktio-launcher > div { position: relative; z-index: 2; font-size: 26px; font-weight: 900; color: #fef6e4; }
+.kontaktio-launcher > div { position: relative; z-index: 2; font-size: 26px; font-weight: 900; color: #fff; }
 .kontaktio-widget {
-  border-radius: 24px !important; border: 1px solid var(--k-border) !important;
+  border-radius: 20px !important; border: 1px solid var(--k-border) !important;
   background: var(--k-glass) !important;
-  backdrop-filter: blur(30px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(30px) saturate(180%) !important;
-  box-shadow: 0 32px 110px rgba(0,0,0,.75), 0 1px 0 rgba(255,255,255,.06) inset !important;
+  backdrop-filter: blur(32px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(180%) !important;
+  box-shadow: 0 32px 110px rgba(0,0,0,.85), 0 1px 0 rgba(255,255,255,.06) inset !important;
   position: fixed !important; bottom: 110px !important; right: 28px !important;
   z-index: 999999 !important; overflow: hidden;
 }
 .kontaktio-widget::before {
   content: ""; position: absolute; inset: -60px;
-  background: radial-gradient(700px 480px at 20% 10%, rgba(212,175,55,.28), transparent 60%), radial-gradient(620px 520px at 90% 0%, rgba(139,108,31,.24), transparent 58%), radial-gradient(680px 560px at 30% 110%, rgba(212,175,55,.18), transparent 55%);
+  background: radial-gradient(700px 480px at 20% 10%, rgba(196,28,28,.22), transparent 60%), radial-gradient(620px 520px at 90% 0%, rgba(139,0,0,.18), transparent 58%), radial-gradient(680px 560px at 30% 110%, rgba(196,28,28,.14), transparent 55%);
   filter: blur(28px); pointer-events: none; animation: kAurora 9s ease-in-out infinite;
 }
-.kontaktio-header { background: linear-gradient(180deg, rgba(12,12,12,.65), rgba(12,12,12,.25)) !important; color: var(--k-text) !important; border-bottom: 1px solid rgba(255,255,255,.10); }
+.kontaktio-header { background: linear-gradient(180deg, rgba(8,8,8,.70), rgba(8,8,8,.30)) !important; color: var(--k-text) !important; border-bottom: 1px solid rgba(255,255,255,.08); }
 .kontaktio-header-sub { color: var(--k-muted) !important; }
-.kontaktio-bubble { border-radius: 18px !important; font-size: 14.5px !important; line-height: 1.5 !important; box-shadow: 0 18px 50px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.06) inset !important; }
-.kontaktio-row.bot .kontaktio-bubble { background: rgba(255,255,255,.08) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.14); }
-.kontaktio-row.user .kontaktio-bubble { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fef6e4 !important; font-weight: 700; }
-.kontaktio-inputwrap { background: linear-gradient(180deg, rgba(12,12,12,.18), rgba(12,12,12,.38)) !important; border-top: 1px solid rgba(255,255,255,.10); }
-.kontaktio-input { background: rgba(255,255,255,.12) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.18) !important; }
-.kontaktio-input::placeholder { color: rgba(255,255,255,.55); }
-.kontaktio-send { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fef6e4 !important; border: 1px solid rgba(255,255,255,.22); font-weight: 800; box-shadow: 0 12px 40px rgba(212,175,55,.35); }
-@keyframes kAurora { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(14px,-12px) scale(1.05); } }
+.kontaktio-bubble { border-radius: 16px !important; font-size: 14px !important; line-height: 1.5 !important; box-shadow: 0 16px 48px rgba(0,0,0,.40), 0 1px 0 rgba(255,255,255,.05) inset !important; }
+.kontaktio-row.bot .kontaktio-bubble { background: rgba(255,255,255,.07) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.12); }
+.kontaktio-row.user .kontaktio-bubble { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fff !important; font-weight: 600; }
+.kontaktio-inputwrap { background: linear-gradient(180deg, rgba(8,8,8,.20), rgba(8,8,8,.40)) !important; border-top: 1px solid rgba(255,255,255,.08); }
+.kontaktio-input { background: rgba(255,255,255,.10) !important; color: var(--k-text) !important; border: 1px solid rgba(255,255,255,.16) !important; border-radius: 10px !important; }
+.kontaktio-input::placeholder { color: rgba(255,255,255,.45); }
+.kontaktio-send { background: linear-gradient(135deg, var(--k-accent), var(--k-accent2)) !important; color: #fff !important; border: 1px solid rgba(255,255,255,.18); font-weight: 700; box-shadow: 0 10px 36px rgba(196,28,28,.40); border-radius: 10px !important; }
+@keyframes kAurora { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(12px,-10px) scale(1.04); } }
 @media (prefers-reduced-motion: reduce) { .kontaktio-widget::before, .kontaktio-launcher::before { animation: none !important; } }
 </style>
 
@@ -605,7 +941,7 @@
 <script
   src="https://cdn.jsdelivr.net/gh/kontaktio-demo/kontaktio@5d9beb0/kontaktio.js"
   data-kontaktio
-  data-client="NoirPalace"
+  data-client="tatuaz"
   data-backend="https://chatbot-backend-x2cy.onrender.com"
 ></script>
 
@@ -621,4 +957,3 @@
 
 </body>
 </html>
-
