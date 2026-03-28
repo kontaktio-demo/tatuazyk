@@ -1,5 +1,23 @@
 'use strict';
 
+(function () {
+  var key = 'kontaktio-history-tatuaz';
+  try {
+    var raw = localStorage.getItem(key);
+    if (!raw) return;
+    var arr = JSON.parse(raw);
+    if (!Array.isArray(arr) || arr.length < 2) return;
+    var seen = Object.create(null);
+    var deduped = arr.filter(function (m) {
+      var k = m.role + '\0' + m.text;
+      if (seen[k]) return false;
+      seen[k] = true;
+      return true;
+    });
+    if (deduped.length !== arr.length) localStorage.setItem(key, JSON.stringify(deduped));
+  } catch (e) {}
+}());
+
 document.addEventListener('DOMContentLoaded', () => {
   initPreloader();
   initNav();
