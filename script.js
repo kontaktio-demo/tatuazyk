@@ -1,6 +1,6 @@
 /* =============================================================
-   NOIR PALACE — Main Script
-   Preloader · Nav · Hamburger · Scroll reveal · Counters · Form · Sticky bar
+   SERPENT INK — Main Script
+   Preloader · Nav · Hamburger · Scroll reveal · Counters · Form · FAQ · Sticky bar
    ============================================================= */
 
 'use strict';
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHamburger();
   initScrollReveal();
   initCounters();
+  initFAQ();
   initForm();
   initStickyBar();
 });
@@ -28,9 +29,9 @@ function initPreloader() {
   };
 
   if (document.readyState === 'complete') {
-    setTimeout(hide, 800);
+    setTimeout(hide, 900);
   } else {
-    window.addEventListener('load', () => setTimeout(hide, 800));
+    window.addEventListener('load', () => setTimeout(hide, 900));
   }
 }
 
@@ -96,7 +97,7 @@ function initScrollReveal() {
         }
       });
     },
-    { threshold: 0.1, rootMargin: '0px 0px -48px 0px' }
+    { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
   );
 
   elements.forEach(el => observer.observe(el));
@@ -119,8 +120,8 @@ function initCounters() {
         const number  = el.querySelector('.stat-number');
         const target  = parseInt(el.dataset.count, 10);
         const suffix  = el.dataset.suffix || '';
-        const dur     = 1600; // ms
-        const step    = 16;   // ~60fps
+        const dur     = 1600;
+        const step    = 16;
         const steps   = dur / step;
         let   current = 0;
 
@@ -140,6 +141,59 @@ function initCounters() {
 }
 
 /* ──────────────────────────────────────────
+   FAQ ACCORDION
+────────────────────────────────────────── */
+function initFAQ() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
+
+  faqItems.forEach(item => {
+    const btn    = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    if (!btn || !answer) return;
+
+    btn.addEventListener('click', () => {
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      // Close all others
+      faqItems.forEach(other => {
+        if (other === item) return;
+        const otherBtn    = other.querySelector('.faq-question');
+        const otherAnswer = other.querySelector('.faq-answer');
+        if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        if (otherAnswer) {
+          otherAnswer.style.maxHeight = '0';
+          otherAnswer.style.opacity   = '0';
+          setTimeout(() => { otherAnswer.hidden = true; }, 300);
+        }
+      });
+
+      // Toggle this item
+      if (isOpen) {
+        btn.setAttribute('aria-expanded', 'false');
+        answer.style.maxHeight = '0';
+        answer.style.opacity   = '0';
+        setTimeout(() => { answer.hidden = true; }, 300);
+      } else {
+        answer.hidden = false;
+        // Force reflow
+        answer.getBoundingClientRect();
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.opacity   = '1';
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    // Init closed state
+    answer.style.maxHeight  = '0';
+    answer.style.opacity    = '0';
+    answer.style.overflow   = 'hidden';
+    answer.style.transition = 'max-height .35s cubic-bezier(.25,.46,.45,.94), opacity .3s ease';
+    answer.hidden = true;
+  });
+}
+
+/* ──────────────────────────────────────────
    CONTACT FORM
 ────────────────────────────────────────── */
 function initForm() {
@@ -156,24 +210,23 @@ function initForm() {
     const hasName  = nameEl.value.trim();
     const hasEmail = emailEl.value.trim();
 
-    // Clear previous errors
     clearError(nameEl);
     clearError(emailEl);
 
     let hasError = false;
-    if (!hasName)  { showError(nameEl,  'Please enter your name.');  hasError = true; }
-    if (!hasEmail) { showError(emailEl, 'Please enter your email.'); hasError = true; }
+    if (!hasName)  { showError(nameEl,  'Proszę podać imię i nazwisko.');  hasError = true; }
+    if (!hasEmail) { showError(emailEl, 'Proszę podać adres email.'); hasError = true; }
 
     if (hasError) {
       shakeBtn(btn);
       return;
     }
 
-    btn.textContent = 'Sending…';
+    btn.textContent = 'Wysyłanie…';
     btn.disabled = true;
 
     setTimeout(() => {
-      btn.textContent = 'Request Sent ✓';
+      btn.textContent = 'Zapytanie wysłane ✓';
       btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
       btn.style.color = '#fff';
 
