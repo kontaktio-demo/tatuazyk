@@ -1,8 +1,3 @@
-/* =============================================================
-   SERPENT INK — Main Script
-   Preloader · Nav · Hamburger · Scroll reveal · Counters · Form · FAQ · Sticky bar
-   ============================================================= */
-
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,9 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyBar();
 });
 
-/* ──────────────────────────────────────────
-   PRELOADER
-────────────────────────────────────────── */
 function initPreloader() {
   const preloader = document.getElementById('preloader');
   if (!preloader) return;
@@ -35,9 +27,6 @@ function initPreloader() {
   }
 }
 
-/* ──────────────────────────────────────────
-   NAV SCROLL BEHAVIOUR
-────────────────────────────────────────── */
 function initNav() {
   const nav = document.getElementById('nav');
   if (!nav) return;
@@ -47,9 +36,6 @@ function initNav() {
   update();
 }
 
-/* ──────────────────────────────────────────
-   HAMBURGER MENU
-────────────────────────────────────────── */
 function initHamburger() {
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('navLinks');
@@ -81,9 +67,6 @@ function initHamburger() {
   });
 }
 
-/* ──────────────────────────────────────────
-   SCROLL REVEAL (Intersection Observer)
-────────────────────────────────────────── */
 function initScrollReveal() {
   const elements = document.querySelectorAll('.reveal');
   if (!elements.length) return;
@@ -103,9 +86,6 @@ function initScrollReveal() {
   elements.forEach(el => observer.observe(el));
 }
 
-/* ──────────────────────────────────────────
-   ANIMATED COUNTERS
-────────────────────────────────────────── */
 function initCounters() {
   const stats = document.querySelectorAll('.stat[data-count]');
   if (!stats.length) return;
@@ -140,9 +120,6 @@ function initCounters() {
   stats.forEach(stat => observer.observe(stat));
 }
 
-/* ──────────────────────────────────────────
-   FAQ ACCORDION
-────────────────────────────────────────── */
 function initFAQ() {
   const faqItems = document.querySelectorAll('.faq-item');
   if (!faqItems.length) return;
@@ -155,7 +132,7 @@ function initFAQ() {
     btn.addEventListener('click', () => {
       const isOpen = btn.getAttribute('aria-expanded') === 'true';
 
-      // Close all others
+      
       faqItems.forEach(other => {
         if (other === item) return;
         const otherBtn    = other.querySelector('.faq-question');
@@ -168,7 +145,7 @@ function initFAQ() {
         }
       });
 
-      // Toggle this item
+      
       if (isOpen) {
         btn.setAttribute('aria-expanded', 'false');
         answer.style.maxHeight = '0';
@@ -176,7 +153,7 @@ function initFAQ() {
         setTimeout(() => { answer.hidden = true; }, 300);
       } else {
         answer.hidden = false;
-        // Force reflow
+        
         answer.getBoundingClientRect();
         answer.style.maxHeight = answer.scrollHeight + 'px';
         answer.style.opacity   = '1';
@@ -184,7 +161,7 @@ function initFAQ() {
       }
     });
 
-    // Init closed state
+    
     answer.style.maxHeight  = '0';
     answer.style.opacity    = '0';
     answer.style.overflow   = 'hidden';
@@ -193,9 +170,6 @@ function initFAQ() {
   });
 }
 
-/* ──────────────────────────────────────────
-   CONTACT FORM
-────────────────────────────────────────── */
 function initForm() {
   const form = document.getElementById('contactForm');
   if (!form) return;
@@ -266,9 +240,6 @@ function shakeBtn(btn) {
   btn.addEventListener('animationend', () => { btn.style.animation = ''; }, { once: true });
 }
 
-/* ──────────────────────────────────────────
-   STICKY BAR
-────────────────────────────────────────── */
 function initStickyBar() {
   const bar   = document.getElementById('stickyBar');
   const close = document.getElementById('stickyClose');
