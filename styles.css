@@ -364,8 +364,8 @@ p {
 
 .nav.scrolled {
   background: rgba(8,8,8,.92);
-  backdrop-filter: blur(24px) saturate(160%);
-  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
   border-bottom-color: var(--glass-border);
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1952,6 +1952,11 @@ p {
 ::selection {
   background: var(--accent);
   color: #fff;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-dark) var(--bg);
 }
 
 ::-webkit-scrollbar { width: 8px; }
